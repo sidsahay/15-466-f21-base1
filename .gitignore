@@ -5,3 +5,11 @@ dist/pong.pdb
 dist/SDL2.dll
 dist/pong
 dist/pong.exe
+dist/bundle.exe
+dist/bundle
+dist/bundle.ilk
+dist/bundle.pdb
+dist/thog.exe
+dist/thog
+dist/thog.ilk
+dist/thog.pdb
