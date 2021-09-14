@@ -114,7 +114,7 @@ if $(OS) = NT { #Windows
 
 #Store the names of all the .cpp files to build into a variable:
 GAME_NAMES =
-	ThogMode
+	PunchMode
 	PPU466
 	main
 	load_save_png
@@ -130,6 +130,7 @@ BUNDLE_NAMES =
 	bundle
 	gl_compile_program
 	GL
+	data_path
 	;
 
 LOCATE_TARGET = objs ; #put objects in 'objs' directory
@@ -139,7 +140,7 @@ LOCATE_TARGET = objs ; #put objects in 'objs' directory
 Objects $(BUNDLE_NAMES:S=.cpp) ;
 
 LOCATE_TARGET = dist ; #put main in 'dist' directory
-MainFromObjects thog : $(GAME_NAMES:S=$(SUFOBJ)) ;
+MainFromObjects punch : $(GAME_NAMES:S=$(SUFOBJ)) ;
 
 LOCATE_TARGET = dist ; #put main in 'dist' directory
 MainFromObjects bundle : $(BUNDLE_NAMES:S=$(SUFOBJ)) ;

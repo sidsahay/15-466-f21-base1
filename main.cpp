@@ -1,8 +1,8 @@
 //Mode.hpp declares the "Mode::current" static member variable, which is used to decide where event-handling, updating, and drawing events go:
 #include "Mode.hpp"
 
-//The 'ThogMode' mode plays the game:
-#include "ThogMode.hpp"
+//The 'PunchMode' mode plays the game:
+#include "PunchMode.hpp"
 
 //For asset loading:
 #include "Load.hpp"
@@ -93,7 +93,7 @@ int main(int argc, char **argv) {
 	call_load_functions();
 
 	//------------ create game mode + make current --------------
-	Mode::set_current(std::make_shared< ThogMode >());
+	Mode::set_current(std::make_shared< PunchMode >());
 
 	//------------ main loop ------------
 
