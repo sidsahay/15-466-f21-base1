@@ -13,7 +13,7 @@ How Your Asset Pipeline Works:
 * The 16x24 PNG frames are read in by the `dist/bundle` program and clustered into a 4 colour palette because Blender renders out the colors ever so slightly different (13 unique colors in the output instead of 4, probably compression?).
 * Each 16x24 frame is written into 6 tiles in a local copy of the tile table in `dist/bundle`.
 * Additionally, a 16x8 PNG `assets/background.png` made in GIMP is read in as 2 tiles in position 156 and 157, along with its color palette.
-* The tile table, background palette, clustered palette, and a modified (more blue and alpha) palette for the AI are written to disk as binary files `assets/tile.dat` and `assets/palette.dat`.
+* The tile table, background palette, clustered palette, and a modified (more evil and green and alpha) palette for the AI are written to disk as binary files `assets/tile.dat` and `assets/palette.dat`.
 * The game reads the binary files and copies them more or less directly to the PPU.
 * This pipeline was tested on Windows with Blender in the PATH. With it, adding new frames, editing poses, and/or changing colors is trivial.
 

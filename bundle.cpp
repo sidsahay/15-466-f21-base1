@@ -292,12 +292,12 @@ int main(int argc, char** argv) {
     _v.push_back(tile_table);
     std::vector<PPU466::Palette> _p;
 
-    // translucent blue-ish palette for AI
+    // evil green palette for AI
     PPU466::Palette ai_palette = {
         palette[0],
-        glm::u8vec4(palette[1].x, palette[1].y, 0xff, 0x88),
-        glm::u8vec4(palette[2].x, palette[2].y, 0xff, 0x88),
-        glm::u8vec4(palette[3].x, palette[3].y, 0xff, 0x88),
+        glm::u8vec4(palette[1].x, 0xff, palette[1].z, 0x88),
+        glm::u8vec4(palette[2].x, 0xff, palette[2].z, 0x88),
+        glm::u8vec4(palette[3].x, 0xff, palette[3].z, 0x88),
     };
 
     _p.push_back(palette);
